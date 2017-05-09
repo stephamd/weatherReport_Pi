@@ -1,0 +1,134 @@
+
+<response>
+	<version>0.1</version>
+	<termsofService>http://www.wunderground.com/weather/api/d/terms.html</termsofService>
+	<features>
+		<feature>conditions</feature>
+	</features>
+  <current_observation>
+		<image>
+		<url>http://icons.wxug.com/graphics/wu2/logo_130x80.png</url>
+		<title>Weather Underground</title>
+		<link>http://www.wunderground.com</link>
+		</image>
+		<display_location>
+		<full>Cincinnati, OH</full>
+		<city>Cincinnati</city>
+		<state>OH</state>
+		<state_name>Ohio</state_name>
+		<country>US</country>
+		<country_iso3166>US</country_iso3166>
+		<zip>45201</zip>
+		<magic>1</magic>
+		<wmo>99999</wmo>
+		<latitude>39.15999985</latitude>
+		<longitude>-84.45999908</longitude>
+		<elevation>203.0</elevation>
+		</display_location>
+		<observation_location>
+		<full>Norwood, Cincinnati, Ohio</full>
+		<city>Norwood, Cincinnati</city>
+		<state>Ohio</state>
+		<country>US</country>
+		<country_iso3166>US</country_iso3166>
+		<latitude>39.149956</latitude>
+		<longitude>-84.451279</longitude>
+		<elevation>620 ft</elevation>
+		</observation_location>
+		<estimated>
+		</estimated>
+		<station_id>KOHCINCI190</station_id>
+		<observation_time>Last Updated on May 9, 1:00 PM EDT</observation_time>
+		<observation_time_rfc822>Tue, 09 May 2017 13:00:00 -0400</observation_time_rfc822>
+		<observation_epoch>1494349200</observation_epoch>
+		<local_time_rfc822>Tue, 09 May 2017 13:00:08 -0400</local_time_rfc822>
+		<local_epoch>1494349208</local_epoch>
+		<local_tz_short>EDT</local_tz_short>
+		<local_tz_long>America/New_York</local_tz_long>
+		<local_tz_offset>-0400</local_tz_offset>
+		<weather>Overcast</weather>
+		<temperature_string>55.3 F (12.9 C)</temperature_string>
+		<temp_f>55.3</temp_f>
+		<temp_c>12.9</temp_c>
+		<relative_humidity>88%</relative_humidity>
+		<wind_string>From the South at 2.0 MPH</wind_string>
+		<wind_dir>South</wind_dir>
+		<wind_degrees>180</wind_degrees>
+		<wind_mph>2.0</wind_mph>
+		<wind_gust_mph>0</wind_gust_mph>
+		<wind_kph>3.2</wind_kph>
+		<wind_gust_kph>0</wind_gust_kph>
+		<pressure_mb>1015</pressure_mb>
+		<pressure_in>29.98</pressure_in>
+		<pressure_trend>+</pressure_trend>
+		
+		<dewpoint_string>52 F (11 C)</dewpoint_string>
+		<dewpoint_f>52</dewpoint_f>
+		<dewpoint_c>11</dewpoint_c>
+		
+		
+		<heat_index_string>NA</heat_index_string>
+		<heat_index_f>NA</heat_index_f>
+		<heat_index_c>NA</heat_index_c>
+		
+		
+		<windchill_string>NA</windchill_string>
+		<windchill_f>NA</windchill_f>
+		<windchill_c>NA</windchill_c>
+		
+        <feelslike_string>55.3 F (12.9 C)</feelslike_string>
+        <feelslike_f>55.3</feelslike_f>
+        <feelslike_c>12.9</feelslike_c>
+		<visibility_mi>8.0</visibility_mi>
+		<visibility_km>12.9</visibility_km>
+		<solarradiation></solarradiation>
+		<UV>3</UV>
+		<precip_1hr_string>0.00 in ( 0 mm)</precip_1hr_string>
+		<precip_1hr_in>0.00</precip_1hr_in>
+		<precip_1hr_metric> 0</precip_1hr_metric>
+		<precip_today_string>0.89 in (23 mm)</precip_today_string>
+		<precip_today_in>0.89</precip_today_in>
+		<precip_today_metric>23</precip_today_metric>
+		
+		
+		
+		<icon>cloudy</icon>
+		<icon_url>http://icons.wxug.com/i/c/k/cloudy.gif</icon_url>
+		<forecast_url>http://www.wunderground.com/US/OH/Cincinnati.html</forecast_url>
+        
+        <history_url>http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KOHCINCI190</history_url>
+        
+		<ob_url>http://www.wunderground.com/cgi-bin/findweather/getForecast?query=39.149956,-84.451279</ob_url>
+	</current_observation>
+
+		
+	
+	
+	
+	
+    
+	
+	
+		
+	
+
+    
+    
+    
+	
+  
+	
+	
+	
+	
+	
+    
+    
+
+
+    
+    
+    
+    
+</response>
+	
