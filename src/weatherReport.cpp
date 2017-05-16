@@ -14,7 +14,7 @@ author: Matt Stephan
 #include <stdio.h>
 #include <string>
 #include <curl/curl.h>
-
+#include "includes/xmlparser.hpp"
 
 size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream){
 	size_t written = fwrite(ptr, size, nmemb, stream);
@@ -29,6 +29,9 @@ int main(int argc, char* argv[]){
 	CURLcode res;
 	char *url = "http://api.wunderground.com/api/f20b91a98c48d70f/conditions/q/OH/Cincinnati.xml";
 	char outfilename[FILENAME_MAX] = "./res/weather_report.xml";
+
+	//initialize objects
+	XmlParser parser = XmlParser("./res/weather_report.xml");
 	curl = curl_easy_init();
 
 	if(curl){
@@ -44,11 +47,12 @@ int main(int argc, char* argv[]){
 		curl_easy_cleanup(curl);
 		fclose(fp);
 	}
-
-	return 0;
-
-
 	
+	parser.openDoc();
+	
+	parser.cleanUp();
+
+	return 0;	
 }
 
 

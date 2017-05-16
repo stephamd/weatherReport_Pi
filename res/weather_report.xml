@@ -38,33 +38,33 @@
 		<estimated>
 		</estimated>
 		<station_id>KOHCINCI190</station_id>
-		<observation_time>Last Updated on May 9, 1:00 PM EDT</observation_time>
-		<observation_time_rfc822>Tue, 09 May 2017 13:00:00 -0400</observation_time_rfc822>
-		<observation_epoch>1494349200</observation_epoch>
-		<local_time_rfc822>Tue, 09 May 2017 13:00:08 -0400</local_time_rfc822>
-		<local_epoch>1494349208</local_epoch>
+		<observation_time>Last Updated on May 9, 7:02 PM EDT</observation_time>
+		<observation_time_rfc822>Tue, 09 May 2017 19:02:53 -0400</observation_time_rfc822>
+		<observation_epoch>1494370973</observation_epoch>
+		<local_time_rfc822>Tue, 09 May 2017 19:02:59 -0400</local_time_rfc822>
+		<local_epoch>1494370979</local_epoch>
 		<local_tz_short>EDT</local_tz_short>
 		<local_tz_long>America/New_York</local_tz_long>
 		<local_tz_offset>-0400</local_tz_offset>
 		<weather>Overcast</weather>
-		<temperature_string>55.3 F (12.9 C)</temperature_string>
-		<temp_f>55.3</temp_f>
-		<temp_c>12.9</temp_c>
-		<relative_humidity>88%</relative_humidity>
-		<wind_string>From the South at 2.0 MPH</wind_string>
-		<wind_dir>South</wind_dir>
-		<wind_degrees>180</wind_degrees>
-		<wind_mph>2.0</wind_mph>
+		<temperature_string>59.9 F (15.5 C)</temperature_string>
+		<temp_f>59.9</temp_f>
+		<temp_c>15.5</temp_c>
+		<relative_humidity>83%</relative_humidity>
+		<wind_string>From the SSW at 3.0 MPH</wind_string>
+		<wind_dir>SSW</wind_dir>
+		<wind_degrees>203</wind_degrees>
+		<wind_mph>3.0</wind_mph>
 		<wind_gust_mph>0</wind_gust_mph>
-		<wind_kph>3.2</wind_kph>
+		<wind_kph>4.8</wind_kph>
 		<wind_gust_kph>0</wind_gust_kph>
-		<pressure_mb>1015</pressure_mb>
-		<pressure_in>29.98</pressure_in>
-		<pressure_trend>+</pressure_trend>
+		<pressure_mb>1013</pressure_mb>
+		<pressure_in>29.93</pressure_in>
+		<pressure_trend>-</pressure_trend>
 		
-		<dewpoint_string>52 F (11 C)</dewpoint_string>
-		<dewpoint_f>52</dewpoint_f>
-		<dewpoint_c>11</dewpoint_c>
+		<dewpoint_string>54 F (12 C)</dewpoint_string>
+		<dewpoint_f>54</dewpoint_f>
+		<dewpoint_c>12</dewpoint_c>
 		
 		
 		<heat_index_string>NA</heat_index_string>
@@ -76,13 +76,13 @@
 		<windchill_f>NA</windchill_f>
 		<windchill_c>NA</windchill_c>
 		
-        <feelslike_string>55.3 F (12.9 C)</feelslike_string>
-        <feelslike_f>55.3</feelslike_f>
-        <feelslike_c>12.9</feelslike_c>
-		<visibility_mi>8.0</visibility_mi>
-		<visibility_km>12.9</visibility_km>
+        <feelslike_string>59.9 F (15.5 C)</feelslike_string>
+        <feelslike_f>59.9</feelslike_f>
+        <feelslike_c>15.5</feelslike_c>
+		<visibility_mi>10.0</visibility_mi>
+		<visibility_km>16.1</visibility_km>
 		<solarradiation></solarradiation>
-		<UV>3</UV>
+		<UV>1</UV>
 		<precip_1hr_string>0.00 in ( 0 mm)</precip_1hr_string>
 		<precip_1hr_in>0.00</precip_1hr_in>
 		<precip_1hr_metric> 0</precip_1hr_metric>
