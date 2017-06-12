@@ -26,79 +26,79 @@
 		<elevation>203.0</elevation>
 		</display_location>
 		<observation_location>
-		<full>Norwood, Cincinnati, Ohio</full>
-		<city>Norwood, Cincinnati</city>
+		<full>South Oakley, Cincinnati, Ohio</full>
+		<city>South Oakley, Cincinnati</city>
 		<state>Ohio</state>
 		<country>US</country>
 		<country_iso3166>US</country_iso3166>
-		<latitude>39.149956</latitude>
-		<longitude>-84.451279</longitude>
-		<elevation>620 ft</elevation>
+		<latitude>39.145996</latitude>
+		<longitude>-84.422630</longitude>
+		<elevation>617 ft</elevation>
 		</observation_location>
 		<estimated>
 		</estimated>
-		<station_id>KOHCINCI190</station_id>
-		<observation_time>Last Updated on May 9, 7:02 PM EDT</observation_time>
-		<observation_time_rfc822>Tue, 09 May 2017 19:02:53 -0400</observation_time_rfc822>
-		<observation_epoch>1494370973</observation_epoch>
-		<local_time_rfc822>Tue, 09 May 2017 19:02:59 -0400</local_time_rfc822>
-		<local_epoch>1494370979</local_epoch>
+		<station_id>KOHCINCI178</station_id>
+		<observation_time>Last Updated on June 12, 10:05 AM EDT</observation_time>
+		<observation_time_rfc822>Mon, 12 Jun 2017 10:05:43 -0400</observation_time_rfc822>
+		<observation_epoch>1497276343</observation_epoch>
+		<local_time_rfc822>Mon, 12 Jun 2017 10:05:54 -0400</local_time_rfc822>
+		<local_epoch>1497276354</local_epoch>
 		<local_tz_short>EDT</local_tz_short>
 		<local_tz_long>America/New_York</local_tz_long>
 		<local_tz_offset>-0400</local_tz_offset>
-		<weather>Overcast</weather>
-		<temperature_string>59.9 F (15.5 C)</temperature_string>
-		<temp_f>59.9</temp_f>
-		<temp_c>15.5</temp_c>
-		<relative_humidity>83%</relative_humidity>
-		<wind_string>From the SSW at 3.0 MPH</wind_string>
-		<wind_dir>SSW</wind_dir>
-		<wind_degrees>203</wind_degrees>
-		<wind_mph>3.0</wind_mph>
+		<weather>Clear</weather>
+		<temperature_string>84.6 F (29.2 C)</temperature_string>
+		<temp_f>84.6</temp_f>
+		<temp_c>29.2</temp_c>
+		<relative_humidity>53%</relative_humidity>
+		<wind_string>Calm</wind_string>
+		<wind_dir>SW</wind_dir>
+		<wind_degrees>233</wind_degrees>
+		<wind_mph>0.0</wind_mph>
 		<wind_gust_mph>0</wind_gust_mph>
-		<wind_kph>4.8</wind_kph>
+		<wind_kph>0.0</wind_kph>
 		<wind_gust_kph>0</wind_gust_kph>
-		<pressure_mb>1013</pressure_mb>
-		<pressure_in>29.93</pressure_in>
-		<pressure_trend>-</pressure_trend>
+		<pressure_mb>1020</pressure_mb>
+		<pressure_in>30.12</pressure_in>
+		<pressure_trend>0</pressure_trend>
 		
-		<dewpoint_string>54 F (12 C)</dewpoint_string>
-		<dewpoint_f>54</dewpoint_f>
-		<dewpoint_c>12</dewpoint_c>
+		<dewpoint_string>66 F (19 C)</dewpoint_string>
+		<dewpoint_f>66</dewpoint_f>
+		<dewpoint_c>19</dewpoint_c>
 		
 		
-		<heat_index_string>NA</heat_index_string>
-		<heat_index_f>NA</heat_index_f>
-		<heat_index_c>NA</heat_index_c>
+		<heat_index_string>87 F (30 C)</heat_index_string>
+		<heat_index_f>87</heat_index_f>
+		<heat_index_c>30</heat_index_c>
 		
 		
 		<windchill_string>NA</windchill_string>
 		<windchill_f>NA</windchill_f>
 		<windchill_c>NA</windchill_c>
 		
-        <feelslike_string>59.9 F (15.5 C)</feelslike_string>
-        <feelslike_f>59.9</feelslike_f>
-        <feelslike_c>15.5</feelslike_c>
+        <feelslike_string>87 F (30 C)</feelslike_string>
+        <feelslike_f>87</feelslike_f>
+        <feelslike_c>30</feelslike_c>
 		<visibility_mi>10.0</visibility_mi>
 		<visibility_km>16.1</visibility_km>
-		<solarradiation></solarradiation>
-		<UV>1</UV>
+		<solarradiation>525</solarradiation>
+		<UV>4.0</UV>
 		<precip_1hr_string>0.00 in ( 0 mm)</precip_1hr_string>
 		<precip_1hr_in>0.00</precip_1hr_in>
 		<precip_1hr_metric> 0</precip_1hr_metric>
-		<precip_today_string>0.89 in (23 mm)</precip_today_string>
-		<precip_today_in>0.89</precip_today_in>
-		<precip_today_metric>23</precip_today_metric>
+		<precip_today_string>0.00 in (0 mm)</precip_today_string>
+		<precip_today_in>0.00</precip_today_in>
+		<precip_today_metric>0</precip_today_metric>
 		
 		
 		
-		<icon>cloudy</icon>
-		<icon_url>http://icons.wxug.com/i/c/k/cloudy.gif</icon_url>
+		<icon>clear</icon>
+		<icon_url>http://icons.wxug.com/i/c/k/clear.gif</icon_url>
 		<forecast_url>http://www.wunderground.com/US/OH/Cincinnati.html</forecast_url>
         
-        <history_url>http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KOHCINCI190</history_url>
+        <history_url>http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KOHCINCI178</history_url>
         
-		<ob_url>http://www.wunderground.com/cgi-bin/findweather/getForecast?query=39.149956,-84.451279</ob_url>
+		<ob_url>http://www.wunderground.com/cgi-bin/findweather/getForecast?query=39.145996,-84.422630</ob_url>
 	</current_observation>
 
 		
