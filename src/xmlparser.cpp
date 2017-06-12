@@ -1,6 +1,6 @@
 /* xmlparser.cpp
  *
- * Copyright © TechSolve Inc. 2013-2016,
+ * Copyright ï¿½ TechSolve Inc. 2013-2016,
  * All rights reserved.
  * 
  * Use without explicit consent in writing is forbidden.
@@ -36,7 +36,7 @@ XmlParser::XmlParser()
 
 XmlParser::XmlParser(const char* _filename)
 {
-    filename.assign(_filename);
+    filename = _filename;
 }
 
 XmlParser::~XmlParser()
@@ -45,9 +45,9 @@ XmlParser::~XmlParser()
 
 int XmlParser::openDoc()
 {
-    assert(filename.c_str());
+    assert(filename);
     if (debug1) cout << "Open Document" << endl;
-    doc = xmlParseFile(filename.c_str());
+    doc = xmlParseFile(filename);
     if (debug1) cout << "Document Opened" << endl;
 
     //close and return if file is not formatted correctly
