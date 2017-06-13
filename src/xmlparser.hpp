@@ -14,6 +14,7 @@
 #include <string.h>
 #include <iostream>
 #include <vector>
+#include <map>
 #include <assert.h>
 #include "xmlparser.hpp"
 
@@ -34,12 +35,15 @@ public:
     ~XmlParser();
     int openDoc();
     std::vector<std::vector<std::string> > getInfo(std::vector<std::string>);
+    std::map<std::string, std::string> getPathInfo(std::string);
     int cleanUp();
     
 private:
     const char* filename;
     xmlDocPtr doc = NULL;
-    xmlNodePtr cur = NULL;
+    xmlNodePtr root_node = NULL;
+    
+    std::vector<std::string> parsePath(std::string);
 };
 #endif /* XMLPARSER_HPP */
 

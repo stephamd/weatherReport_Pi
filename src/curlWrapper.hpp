@@ -14,6 +14,9 @@
 #ifndef CURLWRAPPER_HPP
 #define CURLWRAPPER_HPP
 
+#include <curl/curl.h>
+#include <stdio.h>
+
 class curlWrapper {
     
 public:
@@ -21,12 +24,12 @@ public:
     ~curlWrapper();
     
     bool init_curl();
-    bool downloadFile(const char* outfilename, const char* url);
+    bool downloadFile(char outfilename[], char* url);
     void cleanUp();
     
 private:
     CURL *curl;
-    size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream);
+    //size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream);
     
     
     

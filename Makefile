@@ -8,12 +8,14 @@ vpath %.cpp ./src
 
 all: weatherReporter
 
-weatherReporter: weatherReport.o xmlparser.o
+weatherReporter: weatherReport.o xmlparser.o curlWrapper.o
 	g++ ${CXXFLAGS} ${LDFLAGS} -o ./bin/weatherReporter.exe $+ ${LIBS}
 
 weatherReport.o: weatherReport.cpp
 
 xmlparser.o: xmlparser.cpp xmlparser.hpp
+
+curlWrapper.o: curlWrapper.cpp curlWrapper.hpp
 
 clean:
 	rm *.o

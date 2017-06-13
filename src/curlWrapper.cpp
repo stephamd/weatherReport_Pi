@@ -5,6 +5,9 @@
  */
 
 #include "curlWrapper.hpp"
+#include <curl/curl.h>
+
+
 
 curlWrapper::curlWrapper() {
 
@@ -12,6 +15,12 @@ curlWrapper::curlWrapper() {
 
 curlWrapper::~curlWrapper() {
     cleanUp();
+}
+
+//not part of class
+size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
+    size_t written = fwrite(ptr, size, nmemb, stream);
+    return written;
 }
 
 //Initialize curl
@@ -28,10 +37,11 @@ bool curlWrapper::init_curl() {
     }
 }
 
-bool curlWrapper::downloadFile(const char* outfilename, const char* url) {
-    bool res;
+bool curlWrapper::downloadFile(char outfilename[], char* url) {
+    bool result;
+    FILE *fp;
     if (curl) {
-        FILE fp = fopen(outfilename, "wb");
+        fp = fopen(outfilename, "wb");
         curl_easy_setopt(curl, CURLOPT_URL, url);
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
@@ -39,16 +49,18 @@ bool curlWrapper::downloadFile(const char* outfilename, const char* url) {
 
         if (res != 0) {
             printf("downloadFile: error, check error buffer\n");
-            res = false;
+            result = false;
+            
         } else {
-            res = true;
+            result = true;
         }
+        
     } else {
         printf("downloadFile: curl not initialized\n");
-        res = false;
+        result = false;
     }
     fclose(fp);
-    return res;
+    return result;
 }
 
 void curlWrapper::cleanUp() {
@@ -57,8 +69,3 @@ void curlWrapper::cleanUp() {
     }
 }
 
-size_t curlWrapper::write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
-    size_t written = fwrite(ptr, size, nmemb, stream);
-    return written;
-
-}
