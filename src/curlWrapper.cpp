@@ -19,7 +19,7 @@ curlWrapper::~curlWrapper() {
 //  success - true
 //  failure - false;
 
-bool curlWrapper::init() {
+bool curlWrapper::init_curl() {
     curl = curl_easy_init();
     if (curl) {
         return true;
@@ -29,25 +29,26 @@ bool curlWrapper::init() {
 }
 
 bool curlWrapper::downloadFile(const char* outfilename, const char* url) {
+    bool res;
     if (curl) {
         FILE fp = fopen(outfilename, "wb");
         curl_easy_setopt(curl, CURLOPT_URL, url);
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
         CURLcode res = curl_easy_perform(curl);
-        
+
         if (res != 0) {
             printf("downloadFile: error, check error buffer\n");
-            return false;
+            res = false;
         } else {
-            return true;
+            res = true;
         }
-        
     } else {
         printf("downloadFile: curl not initialized\n");
-        return false;
+        res = false;
     }
-    return false;
+    fclose(fp);
+    return res;
 }
 
 void curlWrapper::cleanUp() {
@@ -57,6 +58,7 @@ void curlWrapper::cleanUp() {
 }
 
 size_t curlWrapper::write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
-
+    size_t written = fwrite(ptr, size, nmemb, stream);
+    return written;
 
 }

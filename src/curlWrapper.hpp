@@ -20,13 +20,13 @@ public:
     curlWrapper();
     ~curlWrapper();
     
-    bool init();
+    bool init_curl();
     bool downloadFile(const char* outfilename, const char* url);
     void cleanUp();
     
 private:
     CURL *curl;
-    write_data(void *ptr, size_t size, size_t nmemb, FILE *stream);
+    size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream);
     
     
     
